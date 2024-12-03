@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# PrimeShop: React E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technology Stack
 
-Currently, two official plugins are available:
+- React 18
+- TypeScript
+- Vite
+- Zustand
+- Shadcn UI
+- Axios
+- Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Setup
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js 18+
+- npm/yarn
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# Clone repository
+git clone https://github.com/yourusername/swiftcart.git
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Key Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Responsive Product Catalog
+- Advanced Filtering & Sorting
+- Persistent State Management
+- Type-Safe Development
+- Modern UI Components
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## State Management
+
+- Zustand for global state
+- Devtools integration
+- Persistent storage
+- Centralized product filtering
+
+## Performance Optimizations
+
+- Vite for fast builds
+- HMR (Hot Module Replacement)
+- Efficient rendering
+- TypeScript type checking
+
+## Development Scripts
+
+- `dev`: Start development server
+- `build`: Create production build
+- `preview`: Preview production build
+- `lint`: Run ESLint checks
+
+## ESLint Configuration
+
+Configured for TypeScript and React with:
+
+- Type-aware lint rules
+- React plugin
+- Recommended React configurations
+
+## Styling
+
+- Tailwind CSS
+- Shadcn UI components
+- Responsive design
+
+## Contributing
+
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push & open pull request
+
+## License
+
+[Add your license here]
